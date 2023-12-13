@@ -31,13 +31,13 @@ export default async (bud) => {
     })
     watcher
       .on('add', async () => {
-        await genSvgIcon()
+        await genSvgIcon(pathToSvg)
       })
       .on('change', async () => {
-        await genSvgIcon()
+        await genSvgIcon(pathToSvg)
       })
       .on('unlink', async () => {
-        await genSvgIcon()
+        await genSvgIcon(pathToSvg)
       })
   }
 
