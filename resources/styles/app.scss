@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../fonts/sagetheme.scss";
+
+body {
+  background-image: url('../images/F587MJjb_400x400.jpg?as=webp');
+  color: white;
+}

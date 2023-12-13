@@ -1,0 +1,43 @@
+/* Layout
+/ ================================================== */
+:root{
+    --iris--header-height : 100px; // Header height
+    --iris--header-padding: 20px;  // Navbar and heading interval (no banner)
+    --iris--margin-strate: 130px;  // Strate interval
+
+    @include breakpoint(medium) {
+        --iris--header-height : 90px;
+        --iris--margin-strate: 80px;
+    }
+
+    @include breakpoint(small) {
+        --iris--header-height : 80px;
+        --iris--margin-strate: 50px;
+    }
+}
+
+/* Colors
+/ ================================================== */
+$c-white: #fff;
+$c-black: #000;
+$c-navbar: $c-white;
+
+$c-1: var(--iris--global--color-1, #00884b);
+$c-2: var(--iris--global--color-2, #efcf1b);
+$c-3: var(--iris--global--color-3, #fffdf3);
+$c-4: var(--iris--global--color-4, #f6f3e6);
+$c-5: var(--iris--global--color-5, #e5dec1);
+$c-6: var(--iris--global--color-6, #ffffff);
+$c-7: var(--iris--global--color-7, #939599);
+$c-8: var(--iris--global--color-8, #3c3c3b);
+$c-9: var(--iris--global--color-9, #282c33);
+$c-10: var(--iris--global--color-10, #000);
+$c-11: var(--iris--global--color-11, #31a02a);
+$c-12: var(--iris--global--color-12, #f77c14);
+$c-13: var(--iris--global--color-13, #0949cc);
+$c-14: var(--iris--global--color-14, #e80032);
+
+/* Fonts
+/ ================================================== */
+$f-1: var(--iris--global--font-family-1);
+$f-2: var(--iris--global--font-family-2);

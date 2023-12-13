@@ -1,0 +1,20 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 1,
+    "name": "wp-etourisme-v3/carrousel-sit",
+    "version": "0.1.0",
+    "title": "Carrousel S.I.T",
+    "category": "wp-etourisme-v3",
+    "icon": "slides",
+    "description": "Intégrez et affichez une sélection d'offres S.I.T. au format carrousel. (V3)",
+    "supports": {
+        "anchor": false,
+        "html": false,
+        "reusable": false,
+        "align": false,
+        "multiple": true,
+        "ariaLabel": true
+    },
+    "textdomain": "wp-etourisme-v3",
+    "editorScript": "file:./index.js"
+}

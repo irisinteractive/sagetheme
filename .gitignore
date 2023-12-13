@@ -1,0 +1,9 @@
+/node_modules
+/vendor
+/public
+/resources/fonts/*
+!/resources/fonts/.gitkeep
+.env
+.budfiles
+npm-debug.log
+yarn-error.log

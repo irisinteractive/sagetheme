@@ -1,0 +1,36 @@
+${{ name }}-font: "{{ name }}";
+
+@font-face {
+  font-family: ${{ name }}-font;
+  font-weight: normal;
+  font-style: normal;
+  src: {{{ fontSrc }}};
+  font-display: swap;
+}
+
+$customer-icons: (
+{{# each codepoints }}
+  "{{ @key }}": "\\{{ codepoint this }}",
+{{/ each }}
+);
+
+.ci:before,
+.ci:after {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: '{{ name }}', sans-serif;
+  font-style: initial;
+  text-transform: none;
+  font-weight: 400;
+  font-display: swap;
+}
+
+{{# each codepoints }}
+.ci--{{ @key }}:not(.ci--after):before {
+  content: map-get($customer-icons, "{{ @key }}");
+}
+
+.ci--{{ @key }}.ci--after:after {
+  content: map-get($customer-icons, "{{ @key }}");
+}
+{{/ each }}
